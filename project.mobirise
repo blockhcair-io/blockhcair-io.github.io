@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "blockhcair-io",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/blovkvhair-favicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://blockhcair-io.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://blockhcair-io.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "uhnfqnygrn",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 3,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Blockchair:Multi-Blockchain Explorer",
+        "meta_descr": "Blockchair a multi-blockchain search engine and analytics platform designed to simplify access to blockchain information.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://blockchair.com/\"><img src=\"@PROJECT_PATH@/assets/images/blockchairr.png\" alt=\"blockchair\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vAtA1eb0WF",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a>:Multi-Blockchain Explorer</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The rapid growth of blockchain technology and cryptocurrencies has created a growing need for reliable tools that make digital transactions easier to access, understand, and analyze. As blockchain networks continue to expand, users need platforms that provide transparent information about transactions, wallet addresses, blocks, and network activities.\n<br>\n<br>One platform addressing this need is Blockchair, a multi-blockchain search engine and analytics platform designed to simplify access to blockchain information.\n<br>\n<br><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>provides users with an opportunity to explore different cryptocurrency networks through a unified interface. Whether someone is a cryptocurrency enthusiast, blockchain researcher, developer, investor, or beginner, the platform offers useful tools for understanding publicly available blockchain data.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What Is <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a>?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>is a blockchain explorer and search engine that allows users to investigate blockchain data across multiple cryptocurrency networks.\n<br>\n<br>Unlike traditional blockchain explorers, which typically focus on a single cryptocurrency, Blockchair brings information from numerous blockchain networks into one searchable platform.\n<br>\n<br>Users can search for:\n<br>\n<br>Cryptocurrency wallet addresses.\n<br>Transaction identification numbers (TXIDs).\n<br>Individual blockchain blocks.\n<br>Token information.\n<br>Network statistics.\n<br>Embedded text and other blockchain-related data.\n<br>The platform also provides advanced filtering and sorting features, making it easier to locate specific information within large volumes of blockchain records.\n<br>\n<br>Its primary objective is to make blockchain information more accessible and understandable for different categories of users.\n<br>\n<br>Official website: https://blockchair.com/</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a>\n</b><div><b>1. Multi-Blockchain Exploration</b></div></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">One of <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair's </a>major advantages is its ability to provide access to multiple blockchain networks through a single platform.\n<br>\n<br>Instead of visiting different websites to investigate Bitcoin, Ethereum, Litecoin, Dogecoin, and other cryptocurrencies, users can access supported networks through Blockchair.\n<br>\n<br>This unified approach saves time and simplifies blockchain research.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>2. Transaction Tracking</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>allows users to examine cryptocurrency transactions by entering a transaction hash into its search bar.\n<br>\n<br>Depending on the blockchain, transaction information may include:\n<br>\n<br>Transaction status and confirmations.\n<br>Sender and recipient addresses.\n<br>Amount transferred.\n<br>Transaction fees.\n<br>Block inclusion details.\n<br>Transaction timestamps.\n<br>This feature is particularly useful for individuals who want to verify whether a cryptocurrency transfer has been recorded on the blockchain.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>3. Wallet Address Exploration</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Another important feature is wallet address exploration.\n<br>\n<br>Users can enter a public cryptocurrency wallet address to examine its publicly available transaction history and balance information.\n<br>\n<br>This makes it easier to monitor incoming and outgoing transactions, investigate wallet activity, and understand how cryptocurrency funds move across a network.\n<br>\n<br>However, blockchain addresses do not automatically reveal the real-world identity of their owners</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>4. Advanced Search and Filtering</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>offers advanced search capabilities that go beyond basic transaction lookups.\n<br>\n<br>Users can filter, sort, and analyze blockchain information using different criteria. These capabilities are valuable for researchers and analysts who need to investigate large datasets.\n<br>\n<br>The platform's full-text search capabilities also help users locate information embedded within blockchain data.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>5. Blockchain Statistics and Analytics</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Understanding blockchain activity requires more than simply viewing individual transactions.\n<br>\n<br><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>provides statistical information that helps users examine network activity and performance.\n<br>\n<br>Depending on the blockchain, available metrics may include:\n<br>\n<br>Total number of blocks.\n<br>Transaction activity.\n<br>Network fees.\n<br>Mining and network statistics.\n<br>Address-related information.\n<br>Blockchain growth indicators.\n<br>These statistics can help researchers understand network behavior and identify broader trends.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>6. <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>API</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>also provides an API designed for developers, researchers, and organizations.\n<br>\n<br>The API allows applications to retrieve blockchain information programmatically.\n<br>\n<br>Developers can use it to build cryptocurrency dashboards, transaction monitoring applications, analytical platforms, and other blockchain-related services.\n<br>\n<br>Its filtering, sorting, and aggregation capabilities make it particularly useful for applications that need structured blockchain information.\n<br>\n<br>API documentation: https://blockchair.com/api/docs</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>7. Privacy-Focused Approach</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Privacy is another important aspect of <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair's </a>platform.\n<br>\n<br><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>states that it prioritizes user privacy and does not collect or share personal data with third-party analytics companies or advertising networks.\n<br>\n<br>This approach is particularly relevant in the cryptocurrency industry, where users often prefer to minimize the personal information they disclose when researching blockchain transactions.\n<br>\n<br>Nevertheless, users should understand that blockchain transactions on public networks can remain permanently visible and traceable.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Use <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a></b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Getting started with <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>is relatively straightforward.\n<br>\n<br>Step 1: Visit the Website\n<br>\n<br>Open the official Blockchair website using your preferred browser.\n<br>\n<br>Step 2: Enter Your Search Query\n<br>\n<br>Enter a cryptocurrency wallet address, transaction hash, block identifier, or another supported search term.\n<br>\n<br>Step 3: Select the Relevant Blockchain\n<br>\n<br>If necessary, choose the blockchain network associated with the information you want to investigate.\n<br>\n<br>Step 4: Examine the Results\n<br>\n<br>Review the available transaction details, wallet information, block records, or network statistics.\n<br>\n<br>Step 5: Analyze the Information\n<br>\n<br>Use the available filtering, sorting, and analytical tools to investigate the blockchain data more thoroughly.\n<br>\n<br>It is important to remember that Blockchair is an information and analytics platform. It does not process cryptocurrency payments, control users' wallets, or hold cryptocurrency funds in custody.\n<br>\n<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Using <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a></b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>offers several advantages that make it a useful resource within the cryptocurrency ecosystem.\n<br>\n<br>Convenience: Users can explore multiple blockchain networks without constantly switching between individual explorers.\n<br>\n<br>Transparency: It makes publicly available blockchain records easier to access and investigate.\n<br>\n<br>Research Capabilities: Advanced filtering and analytical features support blockchain research and data investigation.\n<br>\n<br>Developer Support: Its API provides a practical way to integrate blockchain information into external applications.\n<br>\n<br>Accessibility: Its search interface makes blockchain exploration approachable for both beginners and experienced users.\n<br>\n<br>Privacy Awareness: Its stated privacy-focused approach provides an additional consideration for users concerned about online tracking.\n<br>\n<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Who Can Benefit From <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a>?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Blockchair serves different groups of users within the cryptocurrency and blockchain industries.\n<br>\n<br>Cryptocurrency investors: Can examine transaction histories and publicly available network information.\n<br>Blockchain developers: Can use API services to retrieve blockchain data for applications.\n<br>Researchers and academics: Can investigate blockchain transactions, network activity, and historical records.\n<br>Cryptocurrency businesses: Can integrate blockchain information into monitoring and analytical services.\n<br>Beginners: Can learn how cryptocurrency transactions and blockchain records work.\n<br>Financial analysts: Can examine on-chain activity and identify patterns in publicly available data.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Limitations and Important Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Although <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>provides useful blockchain exploration tools, users should understand its limitations.\n<br>\n<br>First, blockchain explorers display information recorded on supported networks. They do not independently guarantee the legitimacy of a cryptocurrency project, wallet, or transaction.\n<br>\n<br>Second, blockchain data can be difficult to interpret without technical knowledge. For example, transaction fees, confirmations, smart contract interactions, and wallet balances may require additional understanding.\n<br>\n<br>Third, blockchain coverage and API availability can vary. Users should consult Blockchair's official documentation for the latest supported networks, endpoints, and service limitations.\n<br>\n<br>Finally, Blockchair cannot reverse transactions, recover lost cryptocurrency, or speed up pending transfers. Those functions depend on the relevant blockchain network and wallet infrastructure.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>and the Future of Blockchain Technology</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As cryptocurrency adoption grows, the importance of accessible blockchain information will continue to increase.\n<br>\n<br>Blockchain explorers such as Blockchair contribute to this development by making decentralized network information easier to access and analyze.\n<br>\n<br>The combination of multi-chain exploration, transaction tracking, analytical tools, and API integration creates opportunities for developers, researchers, and businesses to build more informed blockchain applications.\n<br>\n<br>As blockchain ecosystems become increasingly interconnected, platforms that simplify access to information across different networks may play an important role in the industry's development.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>is a useful platform for exploring, tracking, and analyzing information across multiple blockchain networks.\n<br>\n<br>Its multi-chain search engine, transaction tracking capabilities, wallet exploration features, advanced filtering tools, and developer API make it a valuable resource for cryptocurrency users and blockchain professionals.\n<br>\n<br>Although it does not replace cryptocurrency wallets, financial platforms, or independent blockchain verification, it provides an accessible way to investigate publicly available blockchain information.\n<br>\n<br>For anyone interested in understanding cryptocurrency transactions, researching blockchain activity, or developing blockchain-based applications, Blockchair is a platform worth exploring.\n<br>\n<br>Explore Blockchair: https://blockchair.com/<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "vAtA2B6wP8",
+          "_anchor": "article07-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
